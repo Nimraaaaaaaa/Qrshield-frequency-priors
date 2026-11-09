@@ -141,6 +141,14 @@ Classifiers trained on clean images only; AUROC on 6,000 test images per conditi
 
 Pairwise unbiased RBF-MMD² (median heuristic) and sliced Wasserstein-1 (64 projections) between groups defined by *QR class × (clean / camera)*, 1,000 train images per group, in standardised DINOv2 space and in frequency space. Full matrices and heatmaps are saved to `study5_tables/` (see [Outputs](#8-outputs)).
 
+**DINOv2 feature space** (left: MMD, right: sliced W1):
+
+![RQ4: distribution shift in DINOv2 space](results/rq4_shift_dino.png)
+
+**Frequency feature space** (FFT + wavelet):
+
+![RQ4: distribution shift in frequency space](results/rq4_shift_frequency.png)
+
 Key numbers (DINOv2 space):
 
 | Pair | MMD² |
